@@ -1,75 +1,17 @@
-\documentclass{article}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
+\documentclass{rrt}
 
-\setlength\parindent{0pt}
-\setlength{\parskip}{1em}
-
-
-\newenvironment{comment}[1][]
-{%
-    \newcommand{\response}{%
-        \newline
-        \newline
-        \textbf{Response to comment~#1}
-        \newline
-    }%
-    \par\medskip
-    \noindent \textbf{Comment~#1}
-    \newline\noindent\rule{12cm}{0.4pt}
-    \newline
-}
-{%
-    \medskip
-}
-
-
-
-\title{Title of the paper}
-\date{April 2021}
+\newcommand{\paperTitle}{Title of the paper}
 
 \begin{document}
 
-\maketitle
+\newgeometry{top=5cm}
 
-Introductory text goes here.
+\input{title-page}
 
-\section*{Reviewer 1}
+\newgeometry{margin=3cm}
 
-\begin{comment}[1]
-Reviewer 1's first comment goes here.
-%
-\response
-%
-We think ...
-\end{comment}
-
-\begin{comment}[2]
-Reviewer 1's second comment goes here.
-%
-\response
-%
-We agree ...
-\end{comment}
-
-
-\section*{Reviewer 2}
-
-\begin{comment}[1]
-Reviewer 2's first comment goes here.
-%
-\response
-%
-We think ...
-\end{comment}
-
-\begin{comment}[2]
-Reviewer 2's second comment goes here.
-%
-\response
-%
-We agree ...
-\end{comment}
-
+\input{content/02-reviewer-1} \newpage
+\input{content/03-reviewer-2} \newpage
+\input{content/04-reviewer-3} \newpage
 
 \end{document}
