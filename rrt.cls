@@ -10,12 +10,12 @@
 \usepackage{kpfonts}
 
 \usepackage[margin=3cm]{geometry}
+\usepackage[listings,many]{tcolorbox}
+
 
 
 \setlength\parindent{0pt}
 \setlength{\parskip}{1em}
-
-
 
 \pagestyle{fancyplain}
 \renewcommand{\headrulewidth}{0pt}
@@ -23,16 +23,16 @@
 \fancyfoot[R]{\thepage} 
 
 
-\newenvironment{comment}[1][]
+\newenvironment{feedback}[1][]
 {%
     \newcommand{\response}{%
         \newline
         \newline
-        \textbf{Response to comment~#1}
+        \textbf{Response to feedback~#1}
         \newline
     }%
     \par\medskip
-    \noindent \textbf{Comment~#1}
+    \noindent \textbf{Feedback~#1}
     \newline\noindent\rule{\linewidth}{0.4pt}
     \newline
 }
