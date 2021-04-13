@@ -12,7 +12,10 @@
 \usepackage[margin=3cm]{geometry}
 \usepackage[listings,many]{tcolorbox}
 \usepackage{tikz}
+\usepackage{titlesec}
 
+\titleformat{\section}
+  {\normalfont\fontsize{18}{15}\bfseries}{\thesection}{1em}{}
 
 \setlength\parindent{0pt}
 \setlength{\parskip}{1em}
