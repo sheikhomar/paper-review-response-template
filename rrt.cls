@@ -33,6 +33,7 @@
   arc=0pt,
   outer arc=0pt,
   left=20pt,
+  parbox=false, % use defined parskip
   title=#2,
   fonttitle=\bfseries\large\strut,
   coltitle=black,
